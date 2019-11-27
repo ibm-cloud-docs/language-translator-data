@@ -22,8 +22,8 @@ lastupdated: "2019-11-27"
 The following new features and changes to the service are available.
 {: shortdesc}
 
-## Version 1.0.0 (November 2019)
-{: #1.0.0}
+## Version 1.1.0 (November 2019)
+{: #1.1.0}
 
 {{site.data.keyword.languagetranslatorfull}} for {{site.data.keyword.icp4dfull_notm}} is now available.
 
