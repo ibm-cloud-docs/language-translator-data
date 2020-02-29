@@ -17,7 +17,6 @@ Language Translator for IBM Cloud Pak for Data
     Installing
         install.md
         [Helm chart README](https://github.com/ibm-cloud-docs/data-readmes/blob/master/language-translator-README.md)
-
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
@@ -27,7 +26,6 @@ Language Translator for IBM Cloud Pak for Data
     Language support
         translation-models.md
         identifiable-languages.md
-
     /watson/watson-using-sdks
     [Watson GitHub repos](https://github.com/watson-developer-cloud/)
     {: .navgroup-end}
@@ -40,6 +38,5 @@ Language Translator for IBM Cloud Pak for Data
         [StackOverflow](http://stackoverflow.com/questions/tagged/language-translation+ibm-watson-cognitive)
         [IBM Developer Answers](https://developer.ibm.com/answers/topics/language-translator/)
         [WDC Slack channel](http://wdc-slack-inviter.mybluemix.net/)
-
     [Accessibility](/overview/overview-accessibility-platform#features-platform)
     {: .navgroup-end}
