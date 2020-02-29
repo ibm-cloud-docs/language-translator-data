@@ -2410,7 +2410,7 @@ The following models can translate Turkish text.
 </table>
 
 ## Urdu
-{: #arabic}
+{: #urdu}
 
 The following models can translate Urdu text.
 
