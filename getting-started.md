@@ -38,7 +38,7 @@ This tutorial walks you through the commands to translate text from English to S
 ## Before you begin
 {: #prerequisites}
 
-1.  Provision the instance of the {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}}. For more information about provisioning, see [Installing](/docs/services/language-translator-data?topic=language-translator-data-install).
+1.  Provision the instance of the {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}}. For more information about provisioning, see [Installing](/docs/language-translator-data?topic=language-translator-data-install).
 2.  From the {{site.data.keyword.icp4dfull_notm}} web client menu, choose **My Instances**.
 3.  Click the {{site.data.keyword.nlushort}} instance to open the overview page. Copy the `{token}` and `{url}` credential values.
 4.  Make sure that you have the `curl` command.
@@ -52,7 +52,7 @@ This tutorial walks you through the commands to translate text from English to S
     - If necessary, install a version with SSL enabled from [curl.haxx.se](https://curl.haxx.se/){: external}.
 
 
-This tutorial shows you how to use the {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} API from a command-line interface. To download client libraries for various programming languages, check out the [Watson SDKs](/docs/services/natural-language-understanding-data?topic=watson-using-sdks#using-sdks).
+This tutorial shows you how to use the {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} API from a command-line interface. To download client libraries for various programming languages, check out the [Watson SDKs](/docs/natural-language-understanding-data?topic=watson-using-sdks#using-sdks).
 {:tip}
 
 ## Step 1: Translate text
@@ -86,12 +86,12 @@ curl -X POST \
 ## Step 3: Translate a document (Beta)
 {: #translate-a-document}
 
-{{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} allows you to translate documents, such as PDFs and Microsoft Office files, while retaining the original formatting. For a tutorial, check out [Translating documents (Beta)](/docs/services/language-translator-data?topic=language-translator-data-document-translator-tutorial).
+{{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} allows you to translate documents, such as PDFs and Microsoft Office files, while retaining the original formatting. For a tutorial, check out [Translating documents (Beta)](/docs/language-translator-data?topic=language-translator-data-document-translator-tutorial).
 
 ## Next steps
 {: #next-steps}
 
 - View the [API reference](https://{DomainName}/apidocs/language-translator/language-translator-data)
 - View language support information:
-    - [Translation models](/docs/services/language-translator-data?topic=language-translator-data-translation-models)
-    - [Identifiable languages](/docs/services/language-translator-data?topic=language-translator-data-identifiable-languages)
+    - [Translation models](/docs/language-translator-data?topic=language-translator-data-translation-models)
+    - [Identifiable languages](/docs/language-translator-data?topic=language-translator-data-identifiable-languages)
