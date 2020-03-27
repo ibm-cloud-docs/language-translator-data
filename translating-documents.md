@@ -30,11 +30,11 @@ Translate files from one language to another while preserving the original forma
 ## Before you begin
 {: #prerequisites}
 
-- [Get started](/docs/services/language-translator-data?topic=language-translator-data-getting-started) with {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}}. You will need your {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} service credentials (`token` and `url`).
+- [Get started](/docs/language-translator-data?topic=language-translator-data-getting-started) with {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}}. You will need your {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} service credentials (`token` and `url`).
 - Make sure the document you want to translate meets the following requirements:
     - Maximum file size: **20 MB**
     - [Supported file formats](#supported-file-formats)
-    - [Supported translation models](/docs/services/language-translator-data?topic=language-translator-data-translation-models)
+    - [Supported translation models](/docs/language-translator-data?topic=language-translator-data-translation-models)
 
 This tutorial walks you through translating documents from a command line with curl. To view document translation examples in different programming languages, follow the links to the methods in the [API reference](https://{DomainName}/apidocs/language-translator-data) for each step.
 {: note}
@@ -55,7 +55,7 @@ curl -X POST \
 ```
 {: pre}
 
-To translate a document with a [custom model](/docs/services/language-translator-data?topic=language-translator-data-customizing), use the **model_id** parameter. The following request translates the document with the custom model identified by the model ID `96221b69-8e46-42e4-a3c1-808e17c787ca`.
+To translate a document with a [custom model](/docs/language-translator-data?topic=language-translator-data-customizing), use the **model_id** parameter. The following request translates the document with the custom model identified by the model ID `96221b69-8e46-42e4-a3c1-808e17c787ca`.
 
 Example request:
 ```bash
@@ -159,7 +159,7 @@ The response contains a new `document_id`. Repeat steps two and three with your 
 ## Step 5: Delete documents
 {: #delete-documents}
 
-Original documents and any associated translated documents are deleted automatically after they have not been used for a certain period of time. See [Information security](/docs/services/language-translator-data?topic=language-translator-data-information-security) for more details.
+Original documents and any associated translated documents are deleted automatically after they have not been used for a certain period of time. See [Information security](/docs/language-translator-data?topic=language-translator-data-information-security) for more details.
 {: tip}
 
 To delete documents manually, use the [Delete document](https://{DomainName}/apidocs/language-translator#delete-document) method. In this tutorial, the English *curriculum.pdf* file was involved with two translations, so two requests are required to delete all copies of the original document.
