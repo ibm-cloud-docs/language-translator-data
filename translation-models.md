@@ -2,12 +2,14 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-02-28"
+lastupdated: "2020-06-19"
+
+subcollection: language-translator-data
 
 ---
 
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
 {:tip: .tip}
 {:pre: .pre}
 {:codeblock: .codeblock}
@@ -16,2483 +18,540 @@ lastupdated: "2020-02-28"
 # Translation models
 {: #translation-models}
 
-{{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} can translate the following languages.
-Click a language in the list below to view a list of compatible translation models.
+{{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} can translate the following languages. Click a language in the list below to view a list of compatible translation models.
 
-You can also use the **List models** API method to view the translation models that are available, including your custom models. You can filter results by language with the `source` and `target` parameters. The following example lists models that can translate English to Spanish.
+All languages listed here might not be available. Ask an administrator which languages are installed with {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}}.
 
-```bash
-curl --header "Authorization: Bearer {token}" "https://gateway.watsonplatform.net/language-translator/api/v3/models?source=en&target=es&version=2018-05-01"
+You can also use the [List models](https://cloud.ibm.com/apidocs/language-translator-data#list-models){: external} API method to view the translation models that are available. You can filter results by language with the `source` and `target` parameters. The following example lists models that can translate English to Spanish.
+
+```sh
+curl --header "Authorization: Bearer {token}" "{url}/v3/models?source=en&target=es&version=2018-05-01"
 ```
 {: pre}
 
-  - [Arabic](#arabic)
-  - [Bulgarian](#bulgarian)
-  - [Catalan](#catalan)
-  - [Chinese (Simplified)](#chinese-simplified)
-  - [Chinese (Traditional)](#chinese-traditional)
-  - [Croatian](#croatian)
-  - [Czech](#czech)
-  - [Danish](#danish)
-  - [Dutch](#dutch)
-  - [English](#english)
-  - [Estonian](#estonian)
-  - [Finnish](#finnish)
-  - [French](#french)
-  - [German](#german)
-  - [Greek](#greek)
-  - [Hebrew](#hebrew)
-  - [Hindi](#hindi)
-  - [Hungarian](#hungarian)
-  - [Irish](#irish)
-  - [Indonesian](#indonesian)
-  - [Italian](#italian)
-  - [Japanese](#japanese)
-  - [Korean](#korean)
-  - [Latvian](#latvian)
-  - [Lithuanian](#lithuanian)
-  - [Malay](#malay)
-  - [Norwegian Bokmål](#norwegian-bokmal)
-  - [Polish](#polish)
-  - [Portuguese](#portuguese)
-  - [Romanian](#romanian)
-  - [Russian](#russian)
-  - [Slovak](#slovak)
-  - [Slovenian](#slovenian)
-  - [Spanish](#spanish)
-  - [Swedish](#swedish)
-  - [Thai](#thai)
-  - [Turkish](#turkish)
-  - [Urdu](#urdu)
-  - [Vietnamese](#vietnamese)
+For more information, see the [API reference](https://cloud.ibm.com/apidocs/language-translator-data#list-models){: external}.
+
+- [Arabic](#arabic)
+- [Bengali](#bengali)
+- [Bulgarian](#bulgarian)
+- [Catalan](#catalan) (only to and from Spanish)
+- [Chinese (Simplified)](#chinese-simplified)
+- [Chinese (Traditional)](#chinese-traditional)
+- [Croatian](#croatian)
+- [Czech](#czech)
+- [Danish](#danish)
+- [Dutch](#dutch)
+- [English](#english)
+- [Estonian](#estonian)
+- [Finnish](#finnish)
+- [French](#french)
+- [German](#german)
+- [Greek](#greek)
+- [Gujarati](#gujarati)
+- [Hebrew](#hebrew)
+- [Hindi](#hindi)
+- [Hungarian](#hungarian)
+- [Irish](#irish)
+- [Indonesian](#indonesian)
+- [Italian](#italian)
+- [Japanese](#japanese)
+- [Korean](#korean)
+- [Latvian](#latvian)
+- [Lithuanian](#lithuanian)
+- [Malayalam](#malayalam)
+- [Malay](#malay)
+- [Maltese](#maltese)
+- [Nepali](#nepali)
+- [Norwegian Bokmål](#norwegian-bokmal)
+- [Polish](#polish)
+- [Portuguese](#portuguese)
+- [Romanian](#romanian)
+- [Russian](#russian)
+- [Slovak](#slovak)
+- [Slovenian](#slovenian)
+- [Sinhala](#sinhala)
+- [Spanish](#spanish)
+- [Swedish](#swedish)
+- [Tamil](#tamil)
+- [Telugu](#telugu)
+- [Thai](#thai)
+- [Turkish](#turkish)
+- [Urdu](#urdu)
+- [Vietnamese](#vietnamese)
 
 ## Arabic
 {: #arabic}
 
 The following models can translate Arabic text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>ar-en</code>
-    </td>
-    <td>
-     Arabic (<code>ar</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `ar-en`  | Arabic (`ar`) | English (`en`) | general |
+
+## Bengali
+{: #bengali}
+
+The following models can translate Bengali text.
+
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `bn-en`  | Bengali (`bn`) | English (`en`) | general |
 
 ## Bulgarian
 {: #bulgarian}
 
 The following models can translate Bulgarian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>bg-en</code>
-    </td>
-    <td>
-     Bulgarian (<code>bg</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `ar-en`  | Arabic (`ar`) | English (`en`) | general |
 
 ## Catalan
 {: #catalan}
 
 The following models can translate Catalan text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>ca-es</code>
-    </td>
-    <td>
-     Catalan (<code>ca</code>)
-    </td>
-    <td>
-     Spanish (<code>es</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `ca-es`  | Catalan (`ca`) | Spanish (`es`) | general |
 
 ## Chinese (Simplified)
 {: #chinese-simplified}
 
 The following models can translate Chinese (Simplified) text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>zh-en</code>
-    </td>
-    <td>
-     Simplified Chinese (<code>zh</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source                    | Target         | Domain  |
+|----------|---------------------------|----------------|---------|
+| `zh-en`  | Simplified Chinese (`zh`) | English (`en`) | general |
 
 ## Chinese (Traditional)
 {: #chinese-traditional}
 
 The following models can translate Chinese (Traditional) text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>zh-TW</code>-en
-    </td>
-    <td>
-     Traditional Chinese (<code>zh-TW</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID   | Source                       | Target         | Domain  |
+|------------|------------------------------|----------------|---------|
+| `zh-TW-en` | Simplified Chinese (`zh-TW`) | English (`en`) | general |
 
 ## Croatian
 {: #croatian}
 
 The following models can translate Croatian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>hr-en</code>
-    </td>
-    <td>
-     Croatian (<code>hr</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source          | Target         | Domain  |
+|----------|-----------------|----------------|---------|
+| `hr-en`  | Croatian (`hr`) | English (`en`) | general |
 
 ## Czech
 {: #czech}
 
 The following models can translate Czech text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>cs-en</code>
-    </td>
-    <td>
-     Czech (<code>cs</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source       | Target         | Domain  |
+|----------|--------------|----------------|---------|
+| `cs-en`  | Czech (`cs`) | English (`en`) | general |
 
 ## Danish
 {: #danish}
 
 The following models can translate Danish text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>da-en</code>
-    </td>
-    <td>
-     Danish (<code>da</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `da-en`  | Danish (`da`) | English (`en`) | general |
 
 ## Dutch
 {: #dutch}
 
 The following models can translate Dutch text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>nl-en</code>
-    </td>
-    <td>
-     Dutch (<code>nl</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source       | Target         | Domain  |
+|----------|--------------|----------------|---------|
+| `nl-en`  | Dutch (`nl`) | English (`en`) | general |
 
 ## English
 {: #english}
 
 The following models can translate English text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>en-ar</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Arabic (<code>ar</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-bg</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Bulgarian (<code>bg</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-cs</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Czech (<code>cs</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-da</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Danish (<code>da</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-de</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     German (<code>de</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-el</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Greek (<code>el</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-es</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Spanish (<code>es</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-et</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Estonian (<code>et</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-fi</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Finnish (<code>fi</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-fr</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     French (<code>fr</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-ga</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Irish (<code>ga</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-he</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Hebrew (<code>he</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-hi</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Hindi (<code>hi</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-hr</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Croatian (<code>hr</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-id</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Indonesian (<code>id</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-it</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Italian (<code>it</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-ja</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Japanese (<code>ja</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-ko</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Korean (<code>ko</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-lt</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Lithuanian (<code>lt</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-lv</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Latvian (<code>lv</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-ms</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Malay (<code>ms</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-nb</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Norwegian Bokmal (<code>nb</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-nl</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Dutch (<code>nl</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-pl</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Polish (<code>pl</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-pt</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Portuguese (<code>pt</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-ro</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Romanian (<code>ro</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-ru</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Russian (<code>ru</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-sk</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Slovak (<code>sk</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-sl</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Slovenian (<code>sl</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-sv</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Swedish (<code>sv</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-th</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Thai (<code>th</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-tr</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Turkish (<code>tr</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-ur</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Urdu (<code>ur</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-vi</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Vietnamese (<code>vi</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-zh</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Simplified Chinese (<code>zh</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>en-zh-TW</code>
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     Traditional Chinese (<code>zh-TW</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID   | Source         | Target                        | Domain  |
+|------------|----------------|-------------------------------|---------|
+| `en-ar`    | English (`en`) | Arabic (`ar`)                 | general |
+| `en-bg`    | English (`en`) | Bulgarian (`bg`)              | general |
+| `en-bn`    | English (`en`) | Bengali (`bn`)                | general |
+| `en-cs`    | English (`en`) | Czech (`cs`)                  | general |
+| `en-da`    | English (`en`) | Danish (`da`)                 | general |
+| `en-de`    | English (`en`) | German (`de`)                 | general |
+| `en-el`    | English (`en`) | Greek (`el`)                  | general |
+| `en-es`    | English (`en`) | Spanish (`es`)                | general |
+| `en-et`    | English (`en`) | Estonian (`et`)               | general |
+| `en-fi`    | English (`en`) | Finnish (`fi`)                | general |
+| `en-fr`    | English (`en`) | French (`fr`)                 | general |
+| `en-ga`    | English (`en`) | Irish (`ga`)                  | general |
+| `en-gu`    | English (`en`) | Gujarati (`gu`)               | general |
+| `en-he`    | English (`en`) | Hebrew (`he`)                 | general |
+| `en-hi`    | English (`en`) | Hindi (`hi`)                  | general |
+| `en-hr`    | English (`en`) | Croatian (`hr`)               | general |
+| `en-hu`    | English (`en`) | Hungarian (`hu`)              | general |
+| `en-id`    | English (`en`) | Indonesian (`id`)             | general |
+| `en-it`    | English (`en`) | Italian (`it`)                | general |
+| `en-ja`    | English (`en`) | Japanese (`ja`)               | general |
+| `en-ko`    | English (`en`) | Korean (`ko`)                 | general |
+| `en-lt`    | English (`en`) | Lithuanian (`lt`)             | general |
+| `en-lv`    | English (`en`) | Latvian (`lv`)                | general |
+| `en-ml`    | English (`en`) | Malayalam (`ml`)              | general |
+| `en-ms`    | English (`en`) | Malay (`ms`)                  | general |
+| `en-mt`    | English (`en`) | Maltese (`mt`)                | general |
+| `en-ne`    | English (`en`) | Nepali (`ne`)                 | general |
+| `en-nb`    | English (`en`) | Norwegian Bokmal (`nb`)       | general |
+| `en-nl`    | English (`en`) | Dutch (`nl`)                  | general |
+| `en-pl`    | English (`en`) | Polish (`pl`)                 | general |
+| `en-pt`    | English (`en`) | Portuguese (`pt`)             | general |
+| `en-ro`    | English (`en`) | Romanian (`ro`)               | general |
+| `en-ru`    | English (`en`) | Russian (`ru`)                | general |
+| `en-si`    | English (`en`) | Sinhala (`si`)                | general |
+| `en-sk`    | English (`en`) | Slovak (`sk`)                 | general |
+| `en-sl`    | English (`en`) | Slovenian (`sl`)              | general |
+| `en-sv`    | English (`en`) | Swedish (`sv`)                | general |
+| `en-ta`    | English (`en`) | Tamil (`ta`)                  | general |
+| `en-te`    | English (`en`) | Telugu (`te`)                 | general |
+| `en-th`    | English (`en`) | Thai (`th`)                   | general |
+| `en-tr`    | English (`en`) | Turkish (`tr`)                | general |
+| `en-ur`    | English (`en`) | Urdu (`ur`)                   | general |
+| `en-vi`    | English (`en`) | Vietnamese (`vi`)             | general |
+| `en-zh`    | English (`en`) | Simplified Chinese (`zh`)     | general |
+| `en-zh-TW` | English (`en`) | Traditional Chinese (`zh-TW`) | general |
 
 ## Estonian
 {: #estonian}
 
 The following models can translate Estonian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>et-en</code>
-    </td>
-    <td>
-     Estonian (<code>et</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source          | Target         | Domain  |
+|----------|-----------------|----------------|---------|
+| `et-en`  | Estonian (`et`) | English (`en`) | general |
 
 ## Finnish
 {: #finnish}
 
 The following models can translate Finnish text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>fi-en</code>
-    </td>
-    <td>
-     Finnish (<code>fi</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `fi-en`  | Finnish (`fi`) | English (`en`) | general |
 
 ## French
 {: #french}
 
 The following models can translate French text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>fr-de</code>
-    </td>
-    <td>
-     French (<code>fr</code>)
-    </td>
-    <td>
-     German (<code>de</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>fr-en</code>
-    </td>
-    <td>
-     French (<code>fr</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>fr-es</code>
-    </td>
-    <td>
-     French (<code>fr</code>)
-    </td>
-    <td>
-     Spanish (<code>es</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `fr-en`  | French (`fr`) | English (`en`) | general |
 
 ## German
 {: #german}
 
 The following models can translate German text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>de-en</code>
-    </td>
-    <td>
-     German (<code>de</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>de-fr</code>
-    </td>
-    <td>
-     German (<code>de</code>)
-    </td>
-    <td>
-     French (<code>fr</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>de-it</code>
-    </td>
-    <td>
-     German (<code>de</code>)
-    </td>
-    <td>
-     Italian (<code>it</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `de-en`  | German (`de`) | English (`en`) | general |
+| `de-fr`  | German (`de`) | French (`fr`)  | general |
+| `de-it`  | German (`de`) | Italian (`it`) | general |
 
 ## Greek
 {: #greek}
 
 The following models can translate Greek text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>el-en</code>
-    </td>
-    <td>
-     Greek (<code>el</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source       | Target         | Domain  |
+|----------|--------------|----------------|---------|
+| `el-en`  | Greek (`el`) | English (`en`) | general |
+
+## Gujarati
+{: #gujarati}
+
+The following models can translate Gujarati text.
+
+| Model ID | Source          | Target         | Domain  |
+|----------|-----------------|----------------|---------|
+| `gu-en`  | Gujarati (`gu`) | English (`en`) | general |
 
 ## Hebrew
 {: #hebrew}
 
 The following models can translate Hebrew text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>he-en</code>
-    </td>
-    <td>
-     Hebrew (<code>he</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
-
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `he-en`  | Hebrew (`he`) | English (`en`) | general |
 
 ## Hindi
 {: #hindi}
 
 The following models can translate Hindi text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>hi-en</code>
-    </td>
-    <td>
-     Hindi (<code>hi</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source       | Target         | Domain  |
+|----------|--------------|----------------|---------|
+| `hi-en`  | Hindi (`hi`) | English (`en`) | general |
 
 ## Hungarian
 {: #hungarian}
 
 The following models can translate Hungarian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>hu-en</code>
-    </td>
-    <td>
-     Hungarian (<code>hu</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source           | Target         | Domain  |
+|----------|------------------|----------------|---------|
+| `hu-en`  | Hungarian (`hu`) | English (`en`) | general |
 
 ## Indonesian
 {: #indonesian}
 
 The following models can translate Indonesian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>id-en</code>
-    </td>
-    <td>
-     Indonesian (<code>id</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source            | Target         | Domain  |
+|----------|-------------------|----------------|---------|
+| `id-en`  | Indonesian (`id`) | English (`en`) | general |
 
 ## Irish
 {: #irish}
 
 The following models can translate Irish text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>ga-en</code>
-    </td>
-    <td>
-     Irish (<code>ga</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source       | Target         | Domain  |
+|----------|--------------|----------------|---------|
+| `ga-en`  | Irish (`ga`) | English (`en`) | general |
+
+[PostgreSQL]
+(https://www.postgresql.org/)
+
+[PostgreSQL](https://www.postgresql.org/)
 
 ## Italian
 {: #italian}
 
 The following models can translate Italian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>it-de</code>
-    </td>
-    <td>
-     Italian (<code>it</code>)
-    </td>
-    <td>
-     German (<code>de</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>it-en</code>
-    </td>
-    <td>
-     Italian (<code>it</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `it-de`  | Italian (`it`) | German (`de`)  | general |
+| `it-en`  | Italian (`it`) | English (`en`) | general |
 
 ## Japanese
 {: #japanese}
 
 The following models can translate Japanese text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>ja-en</code>
-    </td>
-    <td>
-     Japanese (<code>ja</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source          | Target         | Domain  |
+|----------|-----------------|----------------|---------|
+| `ja-en`  | Japanese (`ja`) | English (`en`) | general |
 
 ## Korean
 {: #korean}
 
 The following models can translate Korean text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>ko-en</code>
-    </td>
-    <td>
-     Korean (<code>ko</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `ko-en`  | Korean (`ko`) | English (`en`) | general |
 
 ## Latvian
 {: #latvian}
 
 The following models can translate Latvian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>lv-en</code>
-    </td>
-    <td>
-     Latvian (<code>lv</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `lv-en`  | Latvian (`lv`) | English (`en`) | general |
 
 ## Lithuanian
 {: #lithuanian}
 
 The following models can translate Lithuanian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>lt-en</code>
-    </td>
-    <td>
-     Lithuanian (<code>lt</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source            | Target         | Domain  |
+|----------|-------------------|----------------|---------|
+| `lt-en`  | Lithuanian (`lt`) | English (`en`) | general |
 
 ## Malay
 {: #malay}
 
 The following models can translate Malay text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>ms-en</code>
-    </td>
-    <td>
-     Malay (<code>ms</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source       | Target         | Domain  |
+|----------|--------------|----------------|---------|
+| `ms-en`  | Malay (`ms`) | English (`en`) | general |
+
+## Malayalam
+{: #malayalam}
+
+The following models can translate Malayalam text.
+
+| Model ID | Source           | Target         | Domain  |
+|----------|------------------|----------------|---------|
+| `ml-en`  | Malayalam (`ml`) | English (`en`) | general |
+
+## Maltese
+{: #maltese}
+
+The following models can translate Maltese text.
+
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `mt-en`  | Maltese (`mt`) | English (`en`) | general |
+
+## Nepali
+{: #nepali}
+
+The following models can translate Nepali text.
+
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `ne-en`  | Nepali (`ne`) | English (`en`) | general |
 
 ## Norwegian Bokmål
 {: #norwegian-bokmal}
 
 The following models can translate Norwegian Bokmål text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>nb-en</code>
-    </td>
-    <td>
-     Norwegian Bokmal (<code>nb</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source                  | Target         | Domain  |
+|----------|-------------------------|----------------|---------|
+| `nb-en`  | Norwegian Bokmal (`nb`) | English (`en`) | general |
 
 ## Polish
 {: #polish}
 
 The following models can translate Polish text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>pl-en</code>
-    </td>
-    <td>
-     Polish (<code>pl</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `pl-en`  | Polish (`pl`) | English (`en`) | general |
 
 ## Portuguese
 {: #portuguese}
 
 The following models can translate Portuguese text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>pt-en</code>
-    </td>
-    <td>
-     Portuguese (<code>pt</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source            | Target         | Domain  |
+|----------|-------------------|----------------|---------|
+| `pt-en`  | Portuguese (`pt`) | English (`en`) | general |
 
 ## Romanian
 {: #romanian}
 
 The following models can translate Romanian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>ro-en</code>
-    </td>
-    <td>
-     Romanian (<code>ro</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source            | Target         | Domain  |
+|----------|-------------------|----------------|---------|
+| `ro-en`  | Romanian (`ro`) | English (`en`) | general |
 
 ## Russian
 {: #russian}
 
 The following models can translate Russian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>ru-en</code>
-    </td>
-    <td>
-     Russian (<code>ru</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `ru-en`  | Russian (`ru`) | English (`en`) | general |
 
-## Slovak
+## Sinhala
+{: #sinhala}
+
+The following models can translate Sinhala text.
+
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `si-en`  | Sinhala (`si`) | English (`en`) | general |
+
+### Slovak
 {: #slovak}
 
 The following models can translate Slovak text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>sk-en</code>
-    </td>
-    <td>
-     Slovak (<code>sk</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `sk-en`  | Slovak (`sk`) | English (`en`) | general |
 
 ## Slovenian
 {: #slovenian}
 
 The following models can translate Slovenian text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>sl-en</code>
-    </td>
-    <td>
-     Slovenian (<code>sl</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source           | Target         | Domain  |
+|----------|------------------|----------------|---------|
+| `sl-en`  | Slovenian (`sl`) | English (`en`) | general |
 
 ## Spanish
 {: #spanish}
 
 The following models can translate Spanish text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>es-ca</code>
-    </td>
-    <td>
-     Spanish (<code>es</code>)
-    </td>
-    <td>
-     Catalan (<code>ca</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>es-en</code>
-    </td>
-    <td>
-     Spanish (<code>es</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-   <tr>
-    <td>
-     <code>es-fr</code>
-    </td>
-    <td>
-     Spanish (<code>es</code>)
-    </td>
-    <td>
-     French (<code>fr</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `es-ca`  | Spanish (`es`) | Catalan (`ca`) | general |
+| `es-en`  | Spanish (`es`) | English (`en`) | general |
+| `es-fr`  | Spanish (`es`) | French (`fr`)  | general |
 
 ## Swedish
 {: #swedish}
 
 The following models can translate Swedish text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>sv-en</code>
-    </td>
-    <td>
-     Swedish (<code>sv</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `sv-en`  | Swedish (`sv`) | English (`en`) | general |
+
+## Tamil
+{: #tamil}
+
+The following models can translate Tamil text.
+
+| Model ID | Source       | Target         | Domain  |
+|----------|--------------|----------------|---------|
+| `ta-en`  | Tamil (`ta`) | English (`en`) | general |
+
+## Telugu
+{: #telugu}
+
+The following models can translate Telugu text.
+
+| Model ID | Source        | Target         | Domain  |
+|----------|---------------|----------------|---------|
+| `te-en`  | Telugu (`te`) | English (`en`) | general |
 
 ## Thai
 {: #thai}
 
 The following models can translate Thai text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>th-en</code>
-    </td>
-    <td>
-     Thai (<code>th</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source      | Target         | Domain  |
+|----------|-------------|----------------|---------|
+| `th-en`  | Thai (`th`) | English (`en`) | general |
 
 ## Turkish
 {: #turkish}
 
 The following models can translate Turkish text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>tr-en</code>
-    </td>
-    <td>
-     Turkish (<code>tr</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source         | Target         | Domain  |
+|----------|----------------|----------------|---------|
+| `tr-en`  | Turkish (`tr`) | English (`en`) | general |
 
 ## Urdu
 {: #urdu}
 
 The following models can translate Urdu text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>ur-en</code>
-    </td>
-    <td>
-     Urdu (<code>ur</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source      | Target         | Domain  |
+|----------|-------------|----------------|---------|
+| `ur-en`  | Urdu (`ur`) | English (`en`) | general |
 
 ## Vietnamese
 {: #vietnamese}
 
 The following models can translate Vietnamese text.
 
-<table>
- <thead>
-  <th>
-   Model ID
-  </th>
-  <th>
-   Source
-  </th>
-  <th>
-   Target
-  </th>
-  <th>
-   Domain
-  </th>
-  <th>
-   Customizable
-  </th>
-  <tbody>
-   <tr>
-    <td>
-     <code>vi-en</code>
-    </td>
-    <td>
-     Vietnamese (<code>vi</code>)
-    </td>
-    <td>
-     English (<code>en</code>)
-    </td>
-    <td>
-     <code>general</code>
-    </td>
-    <td>
-     <code>true</code>
-    </td>
-   </tr>
-  </tbody>
- </thead>
-</table>
+| Model ID | Source            | Target         | Domain  |
+|----------|-------------------|----------------|---------|
+| `vi-en`  | Vietnamese (`vi`) | English (`en`) | general |

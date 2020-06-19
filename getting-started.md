@@ -1,11 +1,13 @@
 ---
 
 copyright:
-  years: 2019
-lastupdated: "2019-11-27"
+  years: 2019, 2020
+lastupdated: "2020-06-19"
+
+subcollection: language-translator-data
 
 ---
-<!-- Attribute definitions -->
+
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:tip: .tip}
@@ -91,7 +93,7 @@ curl -X POST \
 ## Next steps
 {: #next-steps}
 
-- View the [API reference](https://{DomainName}/apidocs/language-translator/language-translator-data)
+- View the [API reference](https://{DomainName}/apidocs/language-translator-data){: external}
 - View language support information:
     - [Translation models](/docs/language-translator-data?topic=language-translator-data-translation-models)
     - [Identifiable languages](/docs/language-translator-data?topic=language-translator-data-identifiable-languages)
