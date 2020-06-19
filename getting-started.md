@@ -4,8 +4,10 @@ copyright:
   years: 2019, 2020
 lastupdated: "2020-06-19"
 
+subcollection: language-translator-data
+
 ---
-<!-- Attribute definitions -->
+
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:tip: .tip}

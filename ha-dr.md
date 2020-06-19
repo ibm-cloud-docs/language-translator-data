@@ -4,6 +4,8 @@ copyright:
   years: 2019, 2020
 lastupdated: "2020-06-19"
 
+subcollection: language-translator-data
+
 ---
 
 {:external: target="_blank" .external}
