@@ -11,16 +11,13 @@ Language Translator for IBM Cloud Pak for Data
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    install.md
     translating-documents.md
-
-    {: .topicgroup}
-    Installing
-        install.md
-        [Helm chart README](https://github.com/ibm-cloud-docs/data-readmes/blob/master/language-translator-README.md)
+    ha-dr.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API reference](https://cloud.ibm.com/apidocs/language-translator/language-translator-data/)
+    [API reference](https://cloud.ibm.com/apidocs/language-translator-data/)
 
     {: .topicgroup}
     Language support
