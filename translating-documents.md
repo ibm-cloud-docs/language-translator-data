@@ -119,7 +119,7 @@ curl -X GET \
 ## Step 4: Translate a previously submitted document
 {: #translate-document-by-reference}
 
-The following [Translate document](https://{DomainName}/apidocs/language-translator#translate-document){: external} request references the original English *curriculum.pdf* file with the `document_id` `bae02796-0d28-435c-9115-888359fdde62` and translates it to Portuguese.
+The following [Translate document](https://{DomainName}/apidocs/language-translator-data#translate-document){: external} request references the original English *curriculum.pdf* file with the `document_id` `bae02796-0d28-435c-9115-888359fdde62` and translates it to Portuguese.
 
 Example request:
 ```bash
@@ -145,7 +145,7 @@ The response contains a new `document_id`. Repeat steps two and three with your 
 ## Step 5: Delete documents
 {: #delete-documents}
 
-To delete documents manually, use the [Delete document](https://{DomainName}/apidocs/language-translator#delete-document){: external} method. In this tutorial, the English *curriculum.pdf* file was involved with two translations, so two requests are required to delete all copies of the original document.
+To delete documents manually, use the [Delete document](https://{DomainName}/apidocs/language-translator-data#delete-document){: external} method. In this tutorial, the English *curriculum.pdf* file was involved with two translations, so two requests are required to delete all copies of the original document.
 
 Delete the original submission of *curriculum.pdf* and the French translation:
 ```bash
