@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-19"
+lastupdated: "2020-06-27"
 
 subcollection: language-translator-data
 
@@ -25,7 +25,9 @@ All languages listed here might not be available. Ask an administrator which lan
 You can also use the [List models](https://cloud.ibm.com/apidocs/language-translator-data#list-models){: external} API method to view the translation models that are available. You can filter results by language with the `source` and `target` parameters. The following example lists models that can translate English to Spanish.
 
 ```sh
-curl --header "Authorization: Bearer {token}" "{url}/v3/models?source=en&target=es&version=2018-05-01"
+curl -X GET \
+--header "Authorization: Bearer {token}" \
+"{url}/v3/models?source=en&target=es&version=2018-05-01"
 ```
 {: pre}
 

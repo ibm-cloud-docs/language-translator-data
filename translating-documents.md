@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-06-19"
+lastupdated: "2020-06-27"
 
 subcollection: language-translator-data
 
@@ -48,11 +48,11 @@ The following [Translate document](https://{DomainName}/apidocs/language-transla
 Example request:
 ```bash
 curl -X POST \
-"{url}/v3/documents?version=2018-05-01" \
 --header "Authorization: Bearer {token}" \
 --form "file=@curriculum.pdf" \
 --form "source=en" \
---form "target=fr"
+--form "target=fr" \
+"{url}/v3/documents?version=2018-05-01"
 ```
 {: pre}
 
@@ -81,8 +81,8 @@ After you have submitted a document for translation, you can use the [Get docume
 Example request:
 ```bash
 curl -X GET \
-"{url}/v3/documents/bae02796-0d28-435c-9115-888359fdde62?version=2018-05-01" \
---header "Authorization: Bearer {token}"
+--header "Authorization: Bearer {token}" \
+"{url}/v3/documents/bae02796-0d28-435c-9115-888359fdde62?version=2018-05-01"
 ```
 {: pre}
 
@@ -111,10 +111,9 @@ The following [Get translated document](https://{DomainName}/apidocs/language-tr
 Example request:
 ```bash
 curl -X GET \
-"{url}/v3/documents/bae02796-0d28-435c-9115-888359fdde62/translated_document?version=2018-05-01" \
 --header "Authorization: Bearer {token}" \
---output "curriculum-fr.pdf"
-
+--output "curriculum-fr.pdf" \
+"{url}/v3/documents/bae02796-0d28-435c-9115-888359fdde62/translated_document?version=2018-05-01"
 ```
 {: pre}
 
@@ -126,11 +125,11 @@ The following [Translate document](https://{DomainName}/apidocs/language-transla
 Example request:
 ```bash
 curl -X POST \
-"{url}/v3/documents?version=2018-05-01" \
 --header "Authorization: Bearer {token}" \
 --form "document_id=bae02796-0d28-435c-9115-888359fdde62" \
 --form "source=en" \
---form "target=pt"
+--form "target=pt" \
+"{url}/v3/documents?version=2018-05-01"
 ```
 {: pre}
 
@@ -150,18 +149,20 @@ The response contains a new `document_id`. Repeat steps two and three with your 
 To delete documents manually, use the [Delete document](https://{DomainName}/apidocs/language-translator-data#delete-document){: external} method. In this tutorial, the English *curriculum.pdf* file was involved with two translations, so two requests are required to delete all copies of the original document.
 
 Delete the original submission of *curriculum.pdf* and the French translation:
+
 ```bash
 curl -X DELETE \
-"{url}/v3/documents/bae02796-0d28-435c-9115-888359fdde62?version=2018-05-01" \
---header "Authorization: Bearer {token}"
+--header "Authorization: Bearer {token}" \
+"{url}/v3/documents/bae02796-0d28-435c-9115-888359fdde62?version=2018-05-01"
 ```
 {: pre}
 
 Delete the duplicate of the original *curriculum.pdf* file and the Portuguese translation:
+
 ```bash
 curl -X DELETE \
-"{url}/v3/documents/a0ge2746-ad38-7d5c-7025-4cd3g9f451ab?version=2018-05-01" \
---header "Authorization: Bearer {token}"
+--header "Authorization: Bearer {token}" \
+"{url}/v3/documents/a0ge2746-ad38-7d5c-7025-4cd3g9f451ab?version=2018-05-01"
 ```
 {: pre}
 

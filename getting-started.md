@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-06-19"
+lastupdated: "2020-06-27"
 
 subcollection: language-translator-data
 
@@ -64,10 +64,10 @@ Use the following example to translate two phrases, "Hello, world!" and "How are
 
 ```bash
 curl -X POST \
-"{url}/v3/translate?version=2018-05-01" \
 --header "Authorization: Bearer {token}" \
 --header "Content-Type: application/json" \
---data "{\"text\": [\"Hello, world! \", \"How are you?\"], \"model_id\":\"en-es\"}"
+--data "{\"text\": [\"Hello, world! \", \"How are you?\"], \"model_id\":\"en-es\"}" \
+"{url}/v3/translate?version=2018-05-01"
 ```
 {: pre}
 
@@ -78,10 +78,10 @@ Use the following example to identify the language of text. <span class="hide-da
 
 ```bash
 curl -X POST \
-"{url}/v3/identify?version=2018-05-01" \
 --header "Authorization: Bearer {token}" \
 --header "Content-Type: text/plain" \
---data "Language Translator translates text from one language to another"
+--data "Language Translator translates text from one language to another" \
+"{url}/v3/identify?version=2018-05-01"
 ```
 {: pre}
 
