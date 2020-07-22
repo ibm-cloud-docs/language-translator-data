@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-07-20"
+lastupdated: "2020-07-22"
 
 subcollection: language-translator-data
 
@@ -29,7 +29,7 @@ subcollection: language-translator-data
 {:url: data-credential-placeholder='url'}
 {:hide-dashboard: .hide-dashboard}
 
-# Getting started tutorial
+# Getting started with {{site.data.keyword.languagetranslatorshort}}
 {: #gettingstarted}
 
 {{site.data.keyword.languagetranslatorfull}} for {{site.data.keyword.icp4dfull_notm}} allows you to translate text programmatically from one language into another language.

@@ -37,4 +37,3 @@ subcollection: language-translator-data
 - View language support information:
   - [Translation models](/docs/language-translator-data?topic=language-translator-data-translation-models)
   - [Identifiable languages](/docs/language-translator-data?topic=language-translator-data-identifiable-languages)
-
