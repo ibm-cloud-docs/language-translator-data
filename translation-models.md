@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-07-22"
+lastupdated: "2020-08-19"
 
 keywords: installed languages,language paks,direct translations,pivot language
 
@@ -29,7 +29,7 @@ With {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4d
 
 For example, if the German to English translation model is enabled (`de-en`), you can translate by specifying the source and target languages. Likewise, if the English to Korean translation model is also enabled (`en-ko`), you can also translate from German to Korean. Although no direct model exists between German and Korean, you can specify the source language (`de`) and target language (`ko`). {{site.data.keyword.languagetranslatorshort}} first translates from German to English, and then translates from English to Korean.
 
-To find out which languages are installed and which models are enabled, ask an administrator. You can also use the [List models](https://cloud.ibm.com/apidocs/language-translator-data#list-models){: external} API method to identify the enabled translation models.
+To find out which languages are installed and which models are enabled, ask an administrator. You can also use the [List models](https://{DomainName}/apidocs/language-translator-data#listmodels){: external} method to identify the enabled translation models.
 
 {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} can translate the following languages.
 
