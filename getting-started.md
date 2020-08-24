@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-07-22"
+lastupdated: "2020-08-24"
 
 subcollection: language-translator-data
 
@@ -72,6 +72,9 @@ curl -X POST \
 "{url}/v3/translate?version=2018-05-01"
 ```
 {: pre}
+
+The `/v3/translate` method accepts a maximum of 50 KB of input text encoded in UTF-8 format for translation.
+{: note}
 
 ## Step 2: Identify language
 {: #identify-language}
