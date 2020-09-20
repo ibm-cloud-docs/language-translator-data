@@ -15,7 +15,6 @@ subcollection: language-translator-data
 {:table: .aria-labeledby="caption"}
 {:codeblock: .codeblock}
 {:tip: .tip}
-{:download: .download}
 
 # High availability and disaster recovery
 {: #ha-dr}
