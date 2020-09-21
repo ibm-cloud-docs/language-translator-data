@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-08-19"
+lastupdated: "2020-09-20"
 
 keywords: installed languages,language paks,direct translations,pivot language
 
@@ -33,52 +33,34 @@ To find out which languages are installed and which models are enabled, ask an a
 
 {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} can translate the following languages.
 
-| Language              | Language code |
-|-----------------------|---------------|
-| Arabic                | `ar`          |
-| Bengali               | `bn`          |
-| Bulgarian             | `bg`          |
-| Catalan\*             | `ca`          |
-| Chinese (Simplified)  | `zh`          |
-| Chinese (Traditional) | `zh-TW`       |
-| Croatian              | `hr`          |
-| Czech                 | `cs`          |
-| Danish                | `da`          |
-| Dutch                 | `nl`          |
-| English               | `en`          |
-| Estonian              | `et`          |
-| Finnish               | `fi`          |
-| French                | `fr`          |
-| German                | `de`          |
-| Greek                 | `el`          |
-| Gujarati              | `gu`          |
-| Hebrew                | `he`          |
-| Hindi                 | `hi`          |
-| Hungarian             | `hu`          |
-| Irish                 | `ga`          |
-| Indonesian            | `id`          |
-| Italian               | `it`          |
-| Japanese              | `ja`          |
-| Korean                | `ko`          |
-| Latvian               | `lv`          |
-| Lithuanian            | `li`          |
-| Malay                 | `ms`          |
-| Malayalam             | `ml`          |
-| Maltese               | `mt`          |
-| Nepali                | `ne`          |
-| Norwegian Bokmål      | `nb`          |
-| Polish                | `pl`          |
-| Portuguese            | `pt`          |
-| Romanian              | `ro`          |
-| Russian               | `ru`          |
-| Sinhala               | `si`          |
-| Slovak                | `sk`          |
-| Slovenian             | `sl`          |
-| Spanish               | `es`          |
-| Swedish               | `sv`          |
-| Tamil                 | `ta`          |
-| Telugu                | `te`          |
-| Thai                  | `th`          |
-| Turkish               | `tr`          |
-| Urdu                  | `ur`          |
-| Vietnamese            | `vi`          |
+| Language              | Language code | Language              | Language code |
+|-----------------------|---------------|-----------------------|---------------|
+| Arabic                | `ar`          | Korean                | `ko`          |
+| Bengali               | `bn`          | Latvian               | `lv`          |
+| Bulgarian             | `bg`          | Lithuanian            | `li`          |
+| Catalan **[1]**       | `ca`          | Malay                 | `ms`          |
+| Chinese (Simplified)  | `zh`          | Malayalam             | `ml`          |
+| Chinese (Traditional) | `zh-TW`       | Maltese               | `mt`          |
+| Croatian              | `hr`          | Nepali                | `ne`          |
+| Czech                 | `cs`          | Norwegian Bokmål      | `nb`          |
+| Danish                | `da`          | Polish                | `pl`          |
+| Dutch                 | `nl`          | Portuguese            | `pt`          |
+| English               | `en`          | Romanian              | `ro`          |
+| Estonian              | `et`          | Russian               | `ru`          |
+| Finnish               | `fi`          | Sinhala               | `si`          |
+| French                | `fr`          | Slovak                | `sk`          |
+| German                | `de`          | Slovenian             | `sl`          |
+| Greek                 | `el`          | Spanish               | `es`          |
+| Gujarati              | `gu`          | Swedish               | `sv`          |
+| Hebrew                | `he`          | Tamil                 | `ta`          |
+| Hindi                 | `hi`          | Telugu                | `te`          |
+| Hungarian             | `hu`          | Thai                  | `th`          |
+| Irish                 | `ga`          | Turkish               | `tr`          |
+| Indonesian            | `id`          | Urdu                  | `ur`          |
+| Italian               | `it`          | Vietnamese            | `vi`          |
+| Japanese              | `ja`          | &nbsp; | &nbsp; |
+{: caption="Table 1. Translatable languages"}
+
+Notes:
+
+1.  Catalan is supported only for translation to and from Spanish.

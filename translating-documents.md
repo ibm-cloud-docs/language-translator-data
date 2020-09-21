@@ -21,7 +21,6 @@ subcollection: language-translator-data
 {:java: .ph data-hd-programlang='java'}
 {:python: .ph data-hd-programlang='python'}
 {:swift: .ph data-hd-programlang='swift'}
-{:download: .download}
 
 # Translating documents (Beta)
 {: #document-translator-tutorial}

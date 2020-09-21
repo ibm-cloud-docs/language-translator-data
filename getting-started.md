@@ -24,7 +24,6 @@ subcollection: language-translator-data
 {:python: .ph data-hd-programlang='python'}
 {:ruby: .ph data-hd-programlang='ruby'}
 {:swift: .ph data-hd-programlang='swift'}
-{:download: .download}
 {:apikey: data-credential-placeholder='apikey'}
 {:url: data-credential-placeholder='url'}
 {:hide-dashboard: .hide-dashboard}
