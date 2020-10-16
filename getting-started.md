@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-08-24"
+lastupdated: "2020-10-16"
 
 subcollection: language-translator-data
 
@@ -97,7 +97,7 @@ curl -X POST \
 ## Next steps
 {: #next-steps}
 
-- View the [API reference](https://{DomainName}/apidocs/language-translator-data){: external}
+- View the [API & SDK reference](https://{DomainName}/apidocs/language-translator-data){: external}
 - View language support information:
     - [Translation models](/docs/language-translator-data?topic=language-translator-data-translation-models)
     - [Identifiable languages](/docs/language-translator-data?topic=language-translator-data-identifiable-languages)

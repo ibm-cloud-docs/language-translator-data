@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-07-30"
+lastupdated: "2020-10-16"
 
 subcollection: language-translator-data
 
@@ -37,7 +37,7 @@ This documentation describes installed instances of {{site.data.keyword.language
 {: #quick-links}
 
 - [Get started](/docs/language-translator-data?topic=language-translator-data-gettingstarted).
-- View the [API reference](https://{DomainName}/apidocs/language-translator-data){: external}.
+- View the [API & SDK reference](https://{DomainName}/apidocs/language-translator-data){: external}.
 - View language support information:
   - [Translation models](/docs/language-translator-data?topic=language-translator-data-translation-models)
   - [Identifiable languages](/docs/language-translator-data?topic=language-translator-data-identifiable-languages)

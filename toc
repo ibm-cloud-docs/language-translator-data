@@ -17,7 +17,7 @@ Language Translator for IBM Cloud Pak for Data
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API reference](https://cloud.ibm.com/apidocs/language-translator-data/)
+    [API & SDK reference](https://cloud.ibm.com/apidocs/language-translator-data/)
 
     {: .topicgroup}
     Language support

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-07-29"
+lastupdated: "2020-10-16"
 
 subcollection: language-translator-data
 
@@ -41,7 +41,7 @@ Make sure that you have the following information and meet the following require
 -   The document must be in one of the [Supported file formats (Beta)](#supported-file-formats) or [Supported file formats (Experimental)](#supported-file-formats-experimental).
 -   The source and target languages must be among the [Supported translation models](/docs/language-translator-data?topic=language-translator-data-translation-models).
 
-This tutorial walks you through translating documents from the command line with `curl`. You can also use the {{site.data.keyword.watson}} SDKs to translate documents with a number of programming languages. For more information, see the methods in the [API reference](https://{DomainName}/apidocs/language-translator-data){: external}.
+This tutorial walks you through translating documents from the command line with `curl`. You can also use the {{site.data.keyword.watson}} SDKs to translate documents with a number of programming languages. For more information, see the methods in the [API & SDK reference](https://{DomainName}/apidocs/language-translator-data){: external}.
 
 ## Step 1: Submit a document to translate
 {: #submit-document-to-translate}
