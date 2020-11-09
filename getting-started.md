@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-23"
+lastupdated: "2020-11-09"
 
 keywords: language translator data,getting started,translate,identify language,translate document,translation
 
@@ -49,7 +49,7 @@ This tutorial walks you through the commands to translate text from English to S
 
 1.  Provision the instance of the {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}}. For more information about provisioning, see [Installing](/docs/language-translator-data?topic=language-translator-data-install).
 1.  From the {{site.data.keyword.icp4dfull_notm}} web client menu, choose **My Instances**.
-1.  Click the {{site.data.keyword.nlushort}} instance to open the overview page. Copy the `{token}` and `{url}` credential values.
+1.  Click the {{site.data.keyword.languagetranslatorshort}} instance to open the overview page. Copy the `{token}` and `{url}` credential values.
 
 This tutorial uses an API key to authenticate. In production, use an IAM token. For more information see [Authenticating to Watson services](/docs/watson?topic=watson-iam).
 {: tip}
