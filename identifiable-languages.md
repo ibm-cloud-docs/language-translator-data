@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-09-20"
+lastupdated: "2020-10-30"
 
 keywords: identify language,identifiable languages
 
@@ -25,9 +25,13 @@ subcollection: language-translator-data
 # Identifiable languages
 {: #identifiable-languages}
 
-The following languages can be identified by the service with the **Identify language** API method.
+{{site.data.keyword.languagetranslatorfull}} for {{site.data.keyword.icp4dfull_notm}} can identify a variety of languages.
+{: shortdesc}
 
-You can also use the **List identifiable languages** method to get the identifiable languages programmatically:
+## Listing identifiable languages
+{: #list-identifiable}
+
+You can use the [List identifiable languages](https://{DomainName}/apidocs/language-translator-data#listidentifiablelanguages) method to retrieve the list of identifiable languages. The following example calls the method:
 
 ```sh
 curl -X GET \
@@ -35,6 +39,38 @@ curl -X GET \
 "{url}/v3/identifiable_languages?version=2018-05-01"
 ```
 {: pre}
+
+The method returns a complete list of all identifiable languages, sorted by `language` code (for example, `af`, `ar`). The output includes the `name` of the language.
+
+```json
+{
+  "languages": [
+    {
+      "language": "af",
+      "name": "Afrikaans"
+    },
+    {
+      "language": "ar",
+      "name": "Arabic"
+    },
+    {
+      "language": "az",
+      "name": "Azerbaijani"
+    },
+    {
+      "language": "ba",
+      "name": "Bashkir"
+    }
+    . . .
+  ]
+}
+```
+{: codeblock}
+
+## List of identifiable languages
+{: #list-languages-identifiable}
+
+The following table list the identifiable languages. The table is sorted by language name and provides the language code for each language.
 
 | Name                                 | Language code | Name                                 | Language code |
 |--------------------------------------|---------------|--------------------------------------|---------------|
@@ -50,7 +86,7 @@ curl -X GET \
 | Bulgarian                            | `bg`          | Marathi                              | `mr`          |
 | Burmese                              | `my`          | Mongolian                            | `mn`          |
 | Catalan                              | `ca`          | Nepali                               | `ne`          |
-| Central Khmer                        | `km`          | Norwegian Bokmal                     | `nb`          |
+| Central Khmer                        | `km`          | Norwegian Bokmål                     | `nb`          |
 | Chinese (Simplified)                 | `zh`          | Norwegian Nynorsk                    | `nn`          |
 | Chinese (Traditional)                | `zh-TW`       | Punjabi                              | `pa`          |
 | Chuvash                              | `cv`          | Punjabi<br/>(Shahmukhi script, Pakistan) | `pa-PK`       |
@@ -75,5 +111,5 @@ curl -X GET \
 | Irish                                | `ga`          | Ukrainian                            | `uk`          |
 | Italian                              | `it`          | Urdu                                 | `ur`          |
 | Japanese                             | `ja`          | Vietnamese                           | `vi`          |
-| Kazakh                               | `kk`          | &nbsp; | &nbsp; |
+| Kazakh                               | `kk`          | Welsh                                | `cy` |
 {: caption="Table 1. Identifiable languages"}

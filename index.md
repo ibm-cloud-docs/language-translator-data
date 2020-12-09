@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-10-16"
+lastupdated: "2020-10-17"
 
 subcollection: language-translator-data
 

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2015, 2020
-lastupdated: "2020-10-16"
+lastupdated: "2020-10-30"
 
 subcollection: language-translator-data
 
@@ -25,10 +25,10 @@ subcollection: language-translator-data
 # Translating documents (Beta)
 {: #document-translator-tutorial}
 
-You can use {{site.data.keyword.languagetranslatorfull}} for {{site.data.keyword.icp4dfull}} to translate files from one language to another while preserving the original document format. The service supports translation of a dozen different file formats, including Microsoft Office and Open Office formats.
+You can use {{site.data.keyword.languagetranslatorfull}} for {{site.data.keyword.icp4dfull}} to translate files from one language to another while preserving the original document format. The service supports translation of many file formats, including Microsoft Office, Open Office, subtitles, PDF, and other formats such as HTML, XML, and JSON.
 {:shortdesc}
 
-Document translation is currently a Beta feature.
+Document translation is currently a beta feature. Translation of PDF documents is experimental.
 {: beta}
 
 ## Before you begin
@@ -39,7 +39,7 @@ Make sure that you have the following information and meet the following require
 -   You need your {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull_notm}} service credentials (`token` and `url`). For more information, see [Getting started with {{site.data.keyword.languagetranslatorshort}}](/docs/language-translator-data?topic=language-translator-data-gettingstarted).
 -   The document that you want to translate must not exceed the size limit of 20 MB.
 -   The document must be in one of the [Supported file formats (Beta)](#supported-file-formats) or [Supported file formats (Experimental)](#supported-file-formats-experimental).
--   The source and target languages must be among the [Supported translation models](/docs/language-translator-data?topic=language-translator-data-translation-models).
+-   The source and target languages must be among the [List of supported languages](/docs/language-translator-data?topic=language-translator-data-translation-models#list-languages-supported).
 
 This tutorial walks you through translating documents from the command line with `curl`. You can also use the {{site.data.keyword.watson}} SDKs to translate documents with a number of programming languages. For more information, see the methods in the [API & SDK reference](https://{DomainName}/apidocs/language-translator-data){: external}.
 
@@ -165,27 +165,50 @@ curl -X DELETE \
 ## Supported file formats (Beta)
 {: #supported-file-formats}
 
-Translation of the following file formats is Beta functionality:
+Translation of the following file formats is beta functionality:
 
--   Microsoft Office
-    -   Word: `.doc`, `.docx`
-    -   PowerPoint: `.ppt`, `.pptx`
-    -   Excel: `.xls`, `.xlsx`
-    -   Rich Text Format: `.rtf`
--   Open Office
-    -   Writer: `.odt`
-    -   Impress: `.odp`
-    -   Calc: `.ods`
--   Other formats
-    -   HTML: `.htm`, `.html`
-    -   XML: `.xml`
-    -   JSON: `.json` (values with type `string` or `string array` are translated)
-    -   Text: `.txt`
+-   Microsoft Office formats:
+    - Word: `.doc`, `.docx`
+    - PowerPoint: `.ppt`, `.pptx`
+    - Excel: `.xls`, `.xlsx`
+    - Rich Text Format: `.rtf`
+-   Open Office formats:
+    - Writer: `.odt`
+    - Impress: `.odp`
+    - Calc: `.ods`
+-   Other formats:
+    - HTML: `.htm`, `.html`
+    - XML: `.xml`
+    - JSON: `.json` (values with type `string` or `string array` are translated)
+    - Text: `.txt`
+
+### Subtitle formats (Beta)
+{: #supported-file-formats-subtitles}
+
+Translation of the following subtitle (or caption) formats is beta functionality:
+
+-   SubRip: `.srt`
+-   SubViewer: `.sbv`
+-   DirectVobSub or VSFilter: `.sub`
+-   MicroDVD: `.sub`
+-   WebVTT: `.vtt`
+
+These textual formats contain the transcript of a sound track or video source. The formats provide plain text that is intuitively comprehensible with minimal syntax. They include a list of cues that contain synchronization information for the media source. They can also include metadata that is not intended for display.
+
+The following information qualifies some of the nuances of subtitle translation:
+
+-   *Character encoding* - Subtitles can be presented in different character sets. The service supports only UTF-8 input and produces only UTF-8 output. The results maintain the line separation and optional Byte Order Mark (BOM) from the original source.
+-   *Markup* - The service attempts to preserve markup in the translated document, but preservation is not guaranteed. The service can silently remove markup from a particular cue.
+-   *Names* - By convention, speaker names can be marked with `-..:`, parentheses, or both. The service extracts and translates speaker names separately to guarantee consistent translation.
+-   *Paragraphs* - The text to be translated is grouped into paragraphs. Each paragraph can span multiple cues, but it always consists of a full set of cue lines. In other words, each paragraph consists of one or more cues in their entirety, with each cue contained fully in a single paragraph.
+
+    A single cue can contain one or more lines of text (for example, two short sentences). The service creates paragraph breaks only at cue line boundaries to preserve the count of lines in the cue. For languages with punctuation, a paragraph generally maps to a complete sentence. For languages without punctuation, a paragraph can contain multiple sentences, which can adversely affect the distribution of lines into cues in the translated document.
+-   *Comments, notes, and titles* - For formats that permit these elements, the service preserves the original text and adds translation that is prefixed by language code. Because this information is intended for use by the author, the service maintains the text in both its original and translated forms.
 
 ## Supported file formats (Experimental)
 {: #supported-file-formats-experimental}
 
-Translation of the following file format is Experimental functionality:
+Translation of the following file format is experimental functionality:
 
 - PDF: `.pdf`
 
