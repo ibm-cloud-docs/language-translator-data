@@ -2,7 +2,7 @@
 
 copyright:
   years: 2019, 2020
-lastupdated: "2020-12-04"
+lastupdated: "2020-12-11"
 
 subcollection: language-translator-data
 
@@ -23,7 +23,7 @@ subcollection: language-translator-data
 # Installing {{site.data.keyword.watson}} {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.cpd_short}}
 {: #install}
 
-To install the latest {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull}} service, see the [installation instructions](https://www.ibm.com/support/producthub/icpdata/docs/content/SSQNUZ_latest/svc-lang/language-translator-install.html){: external} in the {{site.data.keyword.icp4dfull_notm}} documentation.
+To install the latest {{site.data.keyword.languagetranslatorshort}} for {{site.data.keyword.icp4dfull}} service, see the [installation instructions](https://www.ibm.com/support/knowledgecenter/SSQNUZ_3.5.0/svc-lang/language-translator-install.html){: external} in the {{site.data.keyword.icp4dfull_notm}} documentation.
 
 ## Installation instructions for previous version
 {: #install-previous}
