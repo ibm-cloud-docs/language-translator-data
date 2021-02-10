@@ -13,7 +13,6 @@ Language Translator for IBM Cloud Pak for Data
     {: .navgroup id="howto"}
     install.md
     translating-documents.md
-    ha-dr.md
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
@@ -23,6 +22,8 @@ Language Translator for IBM Cloud Pak for Data
     Language support
         translation-models.md
         identifiable-languages.md
+
+    ha-dr.md
     /watson/watson-using-sdks
     [Watson GitHub repos](https://github.com/watson-developer-cloud/)
     {: .navgroup-end}
