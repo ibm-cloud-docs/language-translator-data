@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="language-translator-data" category="cloud_pak" audience="service" href="/docs/language-translator-data?topic=language-translator-data-gettingstarted" path="language-translator-data"}
+{: .toc subcollection="language-translator-data" category="ai" audience="software" href="/docs/language-translator-data?topic=language-translator-data-gettingstarted" path="language-translator-data"}
 Language Translator for IBM Cloud Pak for Data
 
     {: .navgroup id="learn"}
